@@ -1,0 +1,14 @@
+{
+  "users": [
+    {
+      "firstName": "VIPIN",
+      "lastName": "KR",
+      "id": 1
+    },
+    {
+      "firstName": "CRISTIANO",
+      "lastName": "RONALDO",
+      "id": 2
+    }
+  ]
+}

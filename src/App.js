@@ -1,25 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route,Switch } from 'react-router-dom'
+import UserComponent from './component/user.component';
+import CreateUserComponent from './component/create-user.component';
+import React from 'react';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <div className="main">
+      <Switch>
+      <Route exact path='/' component={UserComponent} />
+      <Route exact path='/create-user' component={CreateUserComponent} />  
+      <Route path='/create-user/:id' component={CreateUserComponent} />  
+      </Switch>
+      </div> 
   );
 }
+
 
 export default App;
