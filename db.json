@@ -9,6 +9,11 @@
       "firstName": "CRISTIANO",
       "lastName": "RONALDO",
       "id": 2
+    },
+    {
+      "firstName": "Lionel",
+      "lastName": "Messi",
+      "id": 3
     }
   ]
 }
